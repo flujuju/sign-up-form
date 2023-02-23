@@ -1,23 +1,72 @@
+@font-face {
+    font-family: Norse;
+    src: url(Norse-Bold.otf);
+}
+
 html, 
 body {
     height: 100%;
     margin: 0;
+   
+    
 }
 
 .page{
-    margin: 0 240px;
+    min-width: 900px;
     display: flex;
-    height: 100%;
+    aspect-ratio: 4/3;
+    margin: auto;
+    width: 70%;
 }
 
 .image{
-    flex-grow: 1;
-    background-color: aqua;
+    flex-grow: 2;
+    width: 35%;
+    background-image: url(marek-piwnicki-UEbFDRf9R-c-unsplash.jpg);
     flex-direction: column;
     height: 100%;
+    background-size: cover;
+    box-sizing: border-box;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 200px;
+
 }
 
+.title {
+    background-color: rgb(64, 64, 64, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+}
+
+.title p{
+    font-family: Norse;
+    font-size: 5rem;
+    color: white;
+    margin-left: 24px;
+}   
+
+.title img {
+    max-width: 20%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.image-credit{
+    color : #725bad;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(256,256,256,0.6);
+}
+
+
 .user-interface {
-    flex-grow: 2;
+    flex-grow: 3;
+    width: 65%;    
     background-color: aquamarine;
 }
