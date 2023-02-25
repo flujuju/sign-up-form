@@ -69,4 +69,109 @@ body {
     flex-grow: 3;
     width: 65%;    
     background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+}
+
+.introductory-text {
+    height: 40%;
+    background-color: #f9fafb;
+    font-weight: bold;
+    font-size: 1.5rem;
+    flex: 1 1 auto;
+    padding: 80px 60px 40px 40px; 
+    box-sizing: border-box;
+}
+
+.form {
+    height: 60%;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    background-color: white;
+    box-shadow: 0 4px 2px -2px gray;
+    border-top: 2px solid #fafafa;
+    padding-left: 40px;
+}
+
+.line-one {
+    display: flex;
+}
+
+.line-two {
+    display: flex;
+}
+
+.line-three {
+    display:flex;
+}
+
+.first-name {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.last-name {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.password-1 {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.password-1 p {
+    color: red;
+    font-size: 0.7rem;
+    margin-top: 0;
+}
+
+.password-2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+input {
+    appearance: none;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    border: 1px solid #f3f3f5;
+}
+
+input:focus {
+    outline-style: none;
+    border: 2px solid  #3b65dd !important;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+label{
+    font-size: 0.6rem;
+}
+
+.password-1 input {
+    margin-bottom: 0;
 }

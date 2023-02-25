@@ -20,19 +20,44 @@
         </div>
         <div class="user-interface">
             <div class="introductory-text">
-                <p>text</p>
+                <p>This is not a real online service. You know you need something like this in your life to help you realize your deepest dreams.<br/> Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
             </div>
             <div class="form">
                 <form action="">
                     <div class="user-inputs">
                         <h1>Let's do this</h1>
                         <div class="line-one">
+                            <div class="first-name">
+                                <label for="first-name">FIRST NAME</label>
+                                <input type="text" id="first-name name="first-name">
+                            </div>
+                            <div class="last-name">
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" id="last-name" name="last-name">
+                            </div>
 
                         </div>
                         <div class="line-two">
-
+                            <div class="email">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="phone">
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
                         </div>
                         <div class="line-three">
+                            <div class="password-1">
+                                <label for="password-1">PASSWORD</label>
+                                <input type="password" name="password-1" id="password-1">
+                                <p class="check-match">*Passwords do not match</p>
+                            </div>
+                            <div class="password-2">
+                                <label for="password-2">CONFIRM PASSWORD</label>
+                                <input type="password" name="password-2" id="password-2">
+                            </div>
 
                         </div>
                     </div>
@@ -48,6 +73,26 @@
     </div>
     
 
+<script>
+    let pwTwo = document.querySelector('#password-2');
+    pwTwo.addEventListener("focusout", () => {
+        let pwOne = document.querySelector('#password-1').value;
+        let pwTwoValue = pwTwo.value;
+        let warning = document.querySelector(".check-match");
+        console.log(pwOne);
+        console.log(pwTwoValue);
+        
+        if (pwOne == pwTwoValue) {
+            
+            warning.textContent = '';
+        }
 
+        else {
+            warning.textContent = "*Passwords do not match";
+        }
+    });
+
+
+</script>
 </body>
 </html>
